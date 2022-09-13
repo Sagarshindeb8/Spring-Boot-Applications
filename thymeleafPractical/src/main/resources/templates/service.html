@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Services Page</title>
+</head>
+<body>
+	<h1>This is Services page</h1>
+	
+	<!-- Footer -->
+	<!-- Insert, Include, Replace -->
+	
+	<!-- Page name::fragment name -->
+	<footer id="HostTag1" th:replace="footer::footer1"></footer>
+
+	<!-- We can also pass dynamic values to template while including -->
+<!-- 	
+	<footer id="HostTag2" th:replace="footer::footer2('This is Title','This is SubTitle')"></footer> -->
+
+	<!-- Passing title and subtitle from controller -->
+	<footer id="HostTag2" th:replace="footer::footer2(${title},${subtitle})"></footer>
+	
+	
+</body>
+</html>

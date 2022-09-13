@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Footer Template</title>
+</head>
+<body>
+	<footer id="FragmentTag1" th:fragment="footer1">
+		<div class="container">
+			<h2>About</h2>
+			<h2>This is Thymeleaf Demo</h2>
+			<h2>Spring Boot</h2>
+		</div>
+	</footer>
+	
+	<footer id="FragmentTag2" th:fragment="footer2(title,subtitle)">
+		<div class="container">
+			<h2 th:text="${title}"></h2>
+			<h3 th:text="${subtitle}"></h3>
+			<h2>About</h2>
+			<h2>This is Thymeleaf Demo</h2>
+			<h2>Spring Boot</h2>
+		</div>
+	</footer>
+</body>
+</html>
